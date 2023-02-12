@@ -9,10 +9,10 @@ class Zanr extends Model
 {
     use HasFactory;
 
-    //protected $fillable = [
-    //'naziv',
+    protected $fillable = [
+    'naziv',
 
-    //];
+    ];
 
     public function knjiga(){
         return  $this->hasMany(Knjiga::class);

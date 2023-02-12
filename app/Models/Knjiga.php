@@ -11,12 +11,12 @@ class Knjiga extends Model
 
     protected $guarded=[];
 
-    protected $fillable = [
-       'naziv',
-       'godina_izdanja',
-        'opis',
+   // protected $fillable = [
+    //    'naziv',
+      //  'godina_izdanja',
+     //   'opis',
     
-    ];
+  //  ];
 
     public function autor(){
         return  $this->belongsTo(Autor::class);
