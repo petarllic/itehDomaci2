@@ -11,12 +11,12 @@ class Autor extends Model
     protected $guarded=[];
 
 
-   /* protected $fillable=[
+    protected $fillable=[
         'ime',
         'prezime',
         'datum_rodjenja',
         'pol',
-    ];*/
+    ];
     public function knjiga(){
         return  $this->hasMany(Knjiga::class);
     }
